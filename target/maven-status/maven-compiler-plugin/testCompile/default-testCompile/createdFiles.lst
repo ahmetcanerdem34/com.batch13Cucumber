@@ -1,0 +1,12 @@
+stepdefinitions\KoalaResortStepDefinition.class
+stepdefinitions\EditorStepDefinition.class
+pages\AmazonPage.class
+stepdefinitions\Hooks.class
+runners\TestRunner.class
+stepdefinitions\AmazonStepDefinitions.class
+utilities\Driver.class
+pages\YandexPage.class
+stepdefinitions\YandexStepDefinition.class
+pages\KoalaResortPage.class
+runners\TestRunner2.class
+utilities\ConfigReader.class

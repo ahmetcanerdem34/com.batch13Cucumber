@@ -1,0 +1,81 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-31T18:57:10.921Z",
+        "line": 5,
+        "name": "TC_21 kullanici veri okur",
+        "description": "",
+        "id": "kullanici-koala-resort-hotels-veritabanina-baglanir;tc-21-kullanici-veri-okur",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1574396000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "kullanici Koala Resort Hotels veritabanina baglanir",
+            "match": {
+              "location": "dbStepdefinitions.DbRead.kullanici_koala_resort_hotels_veritabanina_baglanir()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near \u0027.\u0027.\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteCursored(SQLServerStatement.java:2030)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:846)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:767)\r\n\tat com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7225)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3053)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerStatement.executeQuery(SQLServerStatement.java:692)\r\n\tat dbStepdefinitions.DbRead.kullanici_tablosundaki_verilerini_alir(DbRead.java:42)\r\n\tat ✽.kullanici \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir(file:///C:/Users/ahmet/IdeaProjects/com.batch13Cucumber/src/test/resources/features/US1013_DbRead.feature:7)\r\n",
+              "duration": 258429700,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "kullanici \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tHOTELROOM\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Price\"",
+                  "offset": 36
+                }
+              ],
+              "location": "dbStepdefinitions.DbRead.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "kullanici \"Price\" sutunundaki verileri okur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Price\"",
+                  "offset": 10
+                }
+              ],
+              "location": "dbStepdefinitions.DbRead.kullanici_sutunundaki_verileri_okur(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dbread"
+          }
+        ]
+      }
+    ],
+    "name": "Kullanici Koala Resort Hotels veritabanina baglanir",
+    "description": "",
+    "id": "kullanici-koala-resort-hotels-veritabanina-baglanir",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1013_DbRead.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.327">
+    <testcase classname="Kullanici Koala Resort Hotels veritabanina baglanir" name="TC_21 kullanici veri okur" time="1.933">
+        <failure message="Incorrect syntax near '.'." type="com.microsoft.sqlserver.jdbc.SQLServerException">
+            <![CDATA[Given kullanici Koala Resort Hotels veritabanina baglanir...................passed
+And kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir.............failed
+And kullanici "Price" sutunundaki verileri okur.............................skipped
+
+StackTrace:
+com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '.'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteCursored(SQLServerStatement.java:2030)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:846)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:767)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7225)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3053)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeQuery(SQLServerStatement.java:692)
+	at dbStepdefinitions.DbRead.kullanici_tablosundaki_verilerini_alir(DbRead.java:42)
+	at ✽.kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir(file:///C:/Users/ahmet/IdeaProjects/com.batch13Cucumber/src/test/resources/features/US1013_DbRead.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.487">
+    <testcase classname="Db With DBUtils" name="Kullanici tHOTEL tablosundan mail fieldini test eder" time="3.256">
+        <system-out>
+            <![CDATA[Given user DBU Koala Resort Hotels veritabanina baglanir....................passed
+And user DBU "tHOTEL" tablosundaki "EMail" verilerini alir..................passed
+And user DBU "tHOTEL" tablosundaki "EMail" verilerini listeler..............passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

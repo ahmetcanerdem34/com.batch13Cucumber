@@ -1,0 +1,85 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-31T20:27:03.476Z",
+        "line": 13,
+        "name": "Kullanici tHOTEL tablosundan mail fieldini test eder",
+        "description": "",
+        "id": "db-with-dbutils;kullanici-thotel-tablosundan-mail-fieldini-test-eder",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1614776300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user DBU Koala Resort Hotels veritabanina baglanir",
+            "match": {
+              "location": "dbStepdefinitions.DBUtilsStepDefinitions.user_dbu_koala_resort_hotels_veritabanina_baglanir()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 284924300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user DBU \"tHOTEL\" tablosundaki \"EMail\" verilerini alir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tHOTEL\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"EMail\"",
+                  "offset": 31
+                }
+              ],
+              "location": "dbStepdefinitions.DBUtilsStepDefinitions.user_dbu_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1304013800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user DBU \"tHOTEL\" tablosundaki \"EMail\" verilerini listeler",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tHOTEL\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"EMail\"",
+                  "offset": 31
+                }
+              ],
+              "location": "dbStepdefinitions.DBUtilsStepDefinitions.userDBUTablosundakiVerileriniListeler(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@listele"
+          }
+        ]
+      }
+    ],
+    "name": "Db With DBUtils",
+    "description": "",
+    "id": "db-with-dbutils",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1014_DbWithDBUtils.feature",
+    "tags": []
+  }
+]
